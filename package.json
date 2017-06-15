@@ -1,16 +1,17 @@
 {
   "name": "rely-on",
-  "version": "2.0.0",
+  "version": "3.0.1",
   "description": "Returns selected DOM elements and throws an error if they are null.",
-  "main": "dist/index.js",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "scripts": {
     "test": "echo 'No tests defined' && exit 0",
-    "build": "tsc"
+    "build": "tsc",
+    "prepublish": "npm run build"
   },
   "keywords": [
     "front-end",
-    "typescript",
-    "flow-typed"
+    "typescript"
   ],
   "repository": "https://github.com/DanArthurGallagher/rely-on",
   "author": "Daniel Arthur Gallagher <dagher_oss@icloud.com>",
