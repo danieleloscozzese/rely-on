@@ -1,22 +1,28 @@
 {
   "name": "rely-on",
-  "version": "3.0.1",
+  "version": "3.0.2",
   "description": "Returns selected DOM elements and throws an error if they are null.",
-  "main": "./dist/index.js",
-  "types": "./dist/index.d.ts",
+  "main": "./lib/index.js",
   "scripts": {
     "test": "echo 'No tests defined' && exit 0",
-    "build": "tsc",
+    "build:transpile": "babel src --out-dir lib",
+    "build:type": "flow-copy-source -v src lib",
+    "build": "npm run build:transpile && npm run build:type",
     "prepublish": "npm run build"
   },
   "keywords": [
     "front-end",
-    "typescript"
+    "flow",
+    "flow-type"
   ],
-  "repository": "https://github.com/DanArthurGallagher/rely-on",
+  "repository": "git+https://github.com/DanArthurGallagher/rely-on",
   "author": "Daniel Arthur Gallagher <dagher_oss@icloud.com>",
   "license": "ISC",
   "devDependencies": {
-    "typescript": "^2.4.0"
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.0",
+    "babel-preset-flow": "^6.23.0",
+    "flow-bin": "^0.56.0",
+    "flow-copy-source": "^1.2.1"
   }
 }

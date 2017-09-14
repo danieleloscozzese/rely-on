@@ -1,0 +1,14 @@
+{
+  "presets":["flow", [
+    "env", {
+      "targets": {
+        "browsers": {
+            "safari": "last 1 version",
+            "chrome": "last 2 version",
+            "edge": "last 1 version",
+            "firefox": "last 2 version"
+        }
+      }
+    }
+  ]]
+}
