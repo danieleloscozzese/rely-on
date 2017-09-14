@@ -1,6 +1,6 @@
 {
   "name": "rely-on",
-  "version": "3.0.1",
+  "version": "3.0.2",
   "description": "Returns selected DOM elements and throws an error if they are null.",
   "main": "./dist/index.js",
   "scripts": {
