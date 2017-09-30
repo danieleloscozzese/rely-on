@@ -1,5 +1,4 @@
 # Summary
-
 HTML applications often require an identified element to be present and select
 the element with the assumption that it is present.
 
