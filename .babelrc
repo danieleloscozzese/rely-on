@@ -8,7 +8,8 @@
             "edge": "last 1 version",
             "firefox": "last 2 version"
         }
-      }
+      },
+      "modules": false
     }
   ]]
 }
