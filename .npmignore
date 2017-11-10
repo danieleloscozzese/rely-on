@@ -1,1 +1,5 @@
 src
+
+# Configuration
+.nvmrc
+tsconfig.json
