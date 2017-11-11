@@ -6,6 +6,7 @@
   "types": "./dist/index.d.ts",
   "scripts": {
     "test": "echo 'No tests defined' && exit 0",
+    "prebuild": "rimraf dist",
     "build": "tsc",
     "prepare": "npm run build"
   },
@@ -17,6 +18,7 @@
   "author": "Daniel Arthur Gallagher <dagher_oss@icloud.com>",
   "license": "ISC",
   "devDependencies": {
+    "rimraf": "^2.6.2",
     "typescript": "^2.4.0"
   }
 }
