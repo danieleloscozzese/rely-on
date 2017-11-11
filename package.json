@@ -5,7 +5,12 @@
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "scripts": {
+    "prettier": "prettier src/*.ts --write",
+    "prelint": "npm run prettier",
+    "lint": "tslint src",
+    "pretest": "npm run lint",
     "test": "echo 'No tests defined' && exit 0",
+    "prebuild": "rimraf dist",
     "build": "tsc",
     "prepare": "npm run build"
   },
@@ -17,6 +22,9 @@
   "author": "Daniel Arthur Gallagher <dagher_oss@icloud.com>",
   "license": "ISC",
   "devDependencies": {
+    "prettier": "1.8.2",
+    "rimraf": "^2.6.2",
+    "tslint": "^5.8.0",
     "typescript": "^2.4.0"
   }
 }
