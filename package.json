@@ -6,6 +6,10 @@
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "scripts": {
+    "prettier": "prettier src/*.ts --write",
+    "prelint": "npm run prettier",
+    "lint": "tslint src",
+    "pretest": "npm run lint",
     "test": "echo 'No tests defined' && exit 0",
     "prettier": "prettier './{src,test}/**/*.ts' --write",
     "prelint": "npm run prettier",
@@ -20,8 +24,12 @@
   "author": "Daniel Arthur Gallagher <dagher_oss@icloud.com>",
   "license": "ISC",
   "devDependencies": {
+<<<<<<< HEAD
     "flowgen": "^1.2.0",
     "prettier": "^1.8.2",
+=======
+    "prettier": "1.8.2",
+>>>>>>> 31995e03efccc8d007e6f682fdf1a2a3dcb15ccd
     "rimraf": "^2.6.2",
     "tslint": "^5.8.0",
     "typescript": "^2.4.0"
