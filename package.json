@@ -16,7 +16,7 @@
     "postbuild": "flowgen dist/index.d.ts --output-file dist/index.js.flow",
     "prepublishOnly": "npm run build"
   },
-  "keywords": ["front-end", "typescript"],
+  "keywords": ["front-end", "typescript", "flow"],
   "repository": "https://github.com/DanArthurGallagher/rely-on",
   "author": "Daniel Arthur Gallagher <dagher_oss@icloud.com>",
   "license": "ISC",
