@@ -1,4 +1,4 @@
-export function relyOn(
+export default function relyOn(
   expectedNode: Node | null,
   errorMessage: string = "The element is required."
 ): Node {
