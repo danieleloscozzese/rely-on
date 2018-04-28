@@ -1,12 +1,20 @@
 export default function relyOn(
-  expectedNode: Node | null,
+  expected: string | Node | null,
   errorMessage: string = "The element is required."
 ): Node {
-  if (expectedNode === null) {
+  if (expected === null) {
     throw new TypeError(errorMessage);
-  } else if (!(expectedNode instanceof Node)) {
+  } else if (typeof expected === "string") {
+    const element = document.getElementById(expected);
+
+    if (element === null) {
+      throw new Error(errorMessage);
+    } else {
+      return element;
+    }
+  } else if (!(expected instanceof Node)) {
     throw new TypeError("The argument must be an HTMLElement or a Node.");
   } else {
-    return expectedNode;
+    return expected;
   }
 }
