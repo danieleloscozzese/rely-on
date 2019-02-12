@@ -24,11 +24,11 @@
   "author": "Daniel Arthur Gallagher <dagher_oss@icloud.com>",
   "license": "ISC",
   "devDependencies": {
-    "flowgen": "^1.2.1",
-    "node": "^8.11.1",
-    "prettier": "1.12.1",
-    "rimraf": "^2.6.2",
-    "tslint": "^5.9.1",
-    "typescript": "^2.8.3"
+    "flowgen": "^1.5.8",
+    "node": "^10.15.1",
+    "prettier": "1.16.4",
+    "rimraf": "^2.6.3",
+    "tslint": "^5.12.1",
+    "typescript": "^2.9.2"
   }
 }
